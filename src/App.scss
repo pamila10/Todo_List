@@ -1,0 +1,56 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  color: var(--text-primary);
+  background-color: var(--background);
+  text-align: center;
+  font-size: large;
+  transition: all .5s;
+
+  &_container {
+    width: 480px;
+  
+    @media (max-width: 520px) {
+      width: 100%;
+    }
+  }
+}
+
+.wrap {
+  display: flex;
+}
+
+.btn {
+
+  &___active {
+    background-color: var(--background-secondary) !important;
+  }
+}
+
+input {
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.w100 {
+  width: 100%;
+}

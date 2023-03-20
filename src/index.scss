@@ -1,3 +1,5 @@
+@import-normalize;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --background: white;
+  --background-secondary: lightblue;
+  --text-primary: black;
+  --text-secondary: royalblue;
+}
+
+[data-theme='dark'] {
+  --background: rgb(31 31 31);
+  --background-secondary: lightblue;
+  --text-primary: white;
+  --text-secondary: grey;
 }

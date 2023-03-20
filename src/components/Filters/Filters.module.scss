@@ -1,0 +1,24 @@
+.SearchForm {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 520px) {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  &_field {
+    @media (max-width: 520px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.Filters {
+  justify-content: end;
+
+  @media (max-width: 520px) {
+    justify-content: center;
+  }
+}
