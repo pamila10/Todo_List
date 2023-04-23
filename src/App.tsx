@@ -70,7 +70,7 @@ const App = () => {
       done: false
     }
 
-    setTodoData([...todoDataList, newItem])
+    setTodoData([newItem, ...todoDataList])
   }
 
   const removeItem = (id: string) => {
@@ -153,16 +153,16 @@ const App = () => {
         </IconButton>
         <Header allItems={allItems} doneItems={doneItems} />
         <main className='main'>
-          <Wrap align='align-center'>
+          <Wrap classes='align-center'>
             <Filters changeSearch={changeSearch} itemsFilter={itemsFilter} changeFilter={changeFilter} />
           </Wrap>
-          <Wrap direction='direction-column'>
+          <Wrap classes='align-center'>
+            <AddItemForm addItem={addItem} />
+          </Wrap>
+          <Wrap classes='main_items direction-column'>
             <ItemsList visibleItems={visibleItems} removeItem={removeItem}
               toggleDone={toggleDone} toggleImportant={toggleImportant}
               editItem={editItem} />
-          </Wrap>
-          <Wrap align='align-center'>
-            <AddItemForm addItem={addItem} />
           </Wrap>
         </main>
       </div >

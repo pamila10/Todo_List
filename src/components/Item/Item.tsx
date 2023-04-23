@@ -91,7 +91,7 @@ const Item = (props: TodoData & ItemProps) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Wrap align='align-center'>
+      <Wrap classes='align-center'>
         {isEditing ? editTemplate : viewTemplate}
         <BootstrapTooltip title="Important">
           <IconButton type='button' onClick={() => toggleImportant(id)} aria-label="important" color="primary">

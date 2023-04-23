@@ -2,12 +2,11 @@ import React from 'react'
 
 type Props = {
   children: React.ReactNode,
-  direction?: string,
-  align?: string
+  classes: string
 }
 
-export const Wrap = ({ children, direction, align }: Props) => {
+export const Wrap = ({ children, classes }: Props) => {
   return (
-    <div className={`wrap ${direction} ${align}`}>{children}</div>
+    <div className={`wrap ${classes}`}>{children}</div>
   )
 }

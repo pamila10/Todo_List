@@ -1,5 +1,5 @@
 .App {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -10,6 +10,7 @@
   text-align: center;
   font-size: large;
   transition: all .5s;
+  box-sizing: border-box;
 
   &_container {
     width: 480px;
@@ -17,6 +18,21 @@
     @media (max-width: 520px) {
       width: 100%;
     }
+  }
+}
+
+.main {
+  &_items {
+    max-height: 500px;
+    overflow: auto;
+  }
+}
+
+.main {
+  &_items {
+    max-height: 45vh;
+    overflow: auto;
+    margin: 10px 0;
   }
 }
 
